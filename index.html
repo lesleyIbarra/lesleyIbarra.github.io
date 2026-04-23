@@ -39,9 +39,9 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,0.97);backdrop
 .hero h1 em{color:var(--slate);font-style:normal;}
 .hero-bio{font-size:18px;color:var(--muted);line-height:1.75;max-width:560px;margin-bottom:40px;font-weight:400;}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
-.btn-primary{background:var(--slate-dark);color:#fff;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:background 0.2s,transform 0.15s;}
-.btn-primary:hover{background:var(--navy);transform:translateY(-1px);}
-.btn-outline{background:#fff;color:var(--slate-dark);border:1.5px solid var(--slate-dark);padding:13px 28px;border-radius:10px;font-size:15px;font-weight:500;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s,transform 0.15s;}
+.btn-primary{background:var(--slate-dark);color:#fff;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:background 0.2s,transform 0.15s;border:1.5px solid var(--slate-dark);}
+.btn-primary:hover{background:var(--navy);border-color:var(--navy);transform:translateY(-1px);}
+.btn-outline{background:#fff;color:var(--slate-dark);border:1.5px solid var(--slate-dark);padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s,transform 0.15s;}
 .btn-outline:hover{border-color:var(--slate);color:var(--slate);transform:translateY(-1px);}
 
 section{padding:80px 64px;max-width:1200px;margin:0 auto;}
@@ -236,12 +236,12 @@ footer p{font-size:13px;color:rgba(255,255,255,0.35);}
 </nav>
 
 <div class="hero" id="home">
-  <div class="hero-pill">Software Engineer → Product Manager</div>
+  <div class="hero-pill">Engineer · Product · Program</div>
   <h1>I build products for <em>real people, in real situations</em></h1>
-  <p class="hero-bio">I started in engineering, but kept noticing problems no one was defining. At Capital One I shipped internal tools used across teams. Outside of work, I've run field research in state and national parks and built Bluebonnet from the ground up.</p>
+  <p class="hero-bio">I'm an engineer who kept getting pulled into the product side. Two and a half years at Capital One taught me that the hardest problems weren't technical. They were about alignment, communication, and deciding what to build. I led cross-functional work across product, engineering, and operations teams, from reporting systems used across the company to compliance coordination that changed how teams tracked outcomes. Outside of work, I've run field research across four state and national parks and built Bluebonnet, a nature discovery app, from the ground up.</p>
   <div class="hero-actions">
-    <a href="javascript:void(0)" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" class="btn-primary">View My Work →</a>
-    <a href="javascript:void(0)" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn-outline">Get in Touch</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})" class="btn-primary" style="min-width:160px;justify-content:center;">View My Work →</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})" class="btn-outline" style="min-width:160px;justify-content:center;">Get in Touch</a>
   </div>
 </div>
 
@@ -254,7 +254,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.35);}
         <div class="section-label">About Me</div>
         <h2 class="section-h2" style="margin-bottom:24px;">About Me</h2>
         <div class="about-text">
-          <p>Two years of engineering at Capital One taught me how large systems actually move. I built data models, shipped internal tools in Angular, and sat in enough product reviews to realize the most valuable conversations were rarely about the code itself. They were about the person on the other end of it.</p>
+          <p>Two and a half years of engineering at Capital One taught me how large systems actually move. I built data models, shipped internal tools in Angular, and sat in enough product reviews to realize the most valuable conversations were rarely about the code itself. They were about the person on the other end of it.</p>
           <p>That shift is what pulled me toward product. I started doing more of that work on my own, spending months on the road through Zion, Death Valley, Guadalupe Mountains, and Caprock Canyon, talking to rangers and first-time visitors about how they explore unfamiliar places.</p>
           <p>That work eventually led me to Bluebonnet, a parks app designed to turn passive screen time into a reason to actually go outside.</p>
           <p>The thread is the same: pay attention, design carefully, and build only what solves something real.</p>
@@ -283,7 +283,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.35);}
     <div style="margin-top:48px;padding-bottom:80px;">
       <h3 style="font-size:20px;font-weight:700;color:var(--navy);margin-bottom:16px;">Outside of Work</h3>
       <div class="outside-card">
-        <p>I spend most of my time outside. Snowboarding, hiking, running, or traveling.</p>
+        <p>I spend most of my time outside. Snowboarding, hiking, running, or traveling. When I'm indoors, you'll usually find me watching the Dallas Stars. Hockey is the one sport I'll drop anything for.</p>
         <p style="margin-top:10px;">I'm usually drawn to things that feel a little uncomfortable at first. Whether it's jumping out of a plane or training for endurance goals, I've come to appreciate the friction of being a beginner.</p>
         <p style="margin-top:10px;">That same mindset carries into how I work. I don't wait for a perfect roadmap. I'm comfortable starting before everything is figured out and working through problems that don't have clear answers yet.</p>
       </div>
@@ -305,7 +305,7 @@ footer p{font-size:13px;color:rgba(255,255,255,0.35);}
       <ul class="exp-bullets">
         <li>Rebuilt internal data workflows so teams could access and act on information without relying on one-off requests</li>
         <li>Built 20+ dashboards and Snowflake models, reducing reporting turnaround time by ~40% and enabling self-serve insights</li>
-        <li>Developed an internal escrow tax calculator end-to-end in Angular and TypeScript</li>
+        <li>Led UI design and stakeholder alignment for an internal escrow tax calculator, presenting iterative designs to stakeholders across product, engineering, and end-user teams before implementing the front end in Angular and TypeScript</li>
         <li>Launched a cross-team compliance digest that increased resolution rates from 60% to 96%</li>
       </ul>
     </div>
@@ -317,6 +317,16 @@ footer p{font-size:13px;color:rgba(255,255,255,0.35);}
       <ul class="exp-bullets">
         <li>Analyzed how users discover and engage with content across YouTube and TikTok</li>
         <li>Explored behavioral patterns behind clicks, retention, and curiosity, shaping my approach to product thinking</li>
+      </ul>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-header">
+        <div><div class="exp-title">Certifications</div></div>
+      </div>
+      <ul class="exp-bullets">
+        <li>AWS Solutions Architect – Associate</li>
+        <li>Google Project Management Professional Certificate — In Progress (Expected May 2026)</li>
       </ul>
     </div>
   </div>
